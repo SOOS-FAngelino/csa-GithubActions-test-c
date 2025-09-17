@@ -20,7 +20,7 @@ jobs:
           #log_level: INFO
           #export_format: SARIF
           #export_file_type: JSON
-          other_docker_run_options: -m 2048 --dns 8.8.8.8
+          other_docker_run_options: -m 6144 --dns 8.8.8.8
 
       - uses: actions/upload-artifact@v4
         with:
