@@ -10,9 +10,9 @@ jobs:
         with:
           client_id: ${{ secrets.QA_SOOS_CLIENT_ID }}
           api_key: ${{ secrets.QA_SOOS_API_KEY }}
-          api_url: "https://qa-api.soos.io/api/"        
+          api_url: "https://api.soos.io/api/"        
           project_name: "csa-gha-PA-19070-test1"
           target_image: "ericallard/elasticsearch:x86"  
-          image_tag: alpha
-          log_level: DEBUG
+          #image_tag: alpha
+          #log_level: DEBUG
           other_docker_run_options: -v /var/run/docker.sock:/var/run/docker.sock --dns 8.8.8.8
